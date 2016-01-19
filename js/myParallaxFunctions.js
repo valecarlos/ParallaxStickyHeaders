@@ -16,11 +16,10 @@ $(window).scroll(function()
 	if(windowScroll > $('.SecondSection').offset().top){
 
 		var opacity = (windowScroll - $('.SecondSection').offset().top) / (windowScroll / 2);
-		var moveTitleBy = (windowScroll - $('.SecondSection').offset().top)/6.3;
-    	if (opacity < 0.5){
-    		$('#SecondCover').css({'opacity': opacity});
-    		}
-    	$('#SecondTitle').css({'top': moveTitleBy + '%'});
+		//var moveTitleBy = (windowScroll - $('.SecondSection').offset().top)/6.3;
+    	$('#SecondCover').css({'opacity': opacity});
+    	//$('#SecondTitle').css({'top': moveTitleBy + '%'});
+ 
 	}
 	$('.SecondSection').toggleClass('fixHeader', $(window).scrollTop() > $('#anchorDiv').offset().top+520);
 
@@ -28,13 +27,13 @@ $(window).scroll(function()
 	if(windowScroll > $('.ThirdSection').offset().top){
 
 		var opacity = (windowScroll - $('.ThirdSection').offset().top) / (windowScroll / 2);
-		var moveTitleBy = (windowScroll - $('.ThirdSection').offset().top)/6.3;
+		//var moveTitleBy = (windowScroll - $('.ThirdSection').offset().top)/6.3;
 
     	if (opacity < 0.5){
     		$('#ThirdCover').css({'opacity': opacity});
     		}
-    	console.log(moveTitleBy)
-    	$('#ThirdTitle').css({'top': moveTitleBy + '%'});
+    	//console.log(moveTitleBy)
+    	//$('#ThirdTitle').css({'top': moveTitleBy + '%'});
 	}
 
   	$('.ThirdSection').toggleClass('fixHeader', $(window).scrollTop() > $('#anchorDivtwo').offset().top+520);

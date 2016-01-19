@@ -66,8 +66,8 @@ img{
 	height: 600px;
 }
 .CoverDiv{
-	/*background-color: rgba(255,0,0,0.5);*/
-	background-color: purple;
+	/*background-color: rgba(255,0,0,0.5);
+	background-color: purple;*/
 	opacity: 0;
 	top:0;
 	left: 0;
@@ -75,14 +75,22 @@ img{
 	bottom: 0;
 	position: absolute;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+}
 
+.CoverDivPurple{
+	background-color: purple;
+}
+
+.CoverDivYellow{
+	background-color: yellow;
 }
 .Titles{
 	color: white;
-	font-size: 5em;
+	font-size: 4em;
 	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 0px;
 	/*bottom: 50%;
 	text-align: center;*/
 }
@@ -93,6 +101,7 @@ img{
 	background-image: url(../img/tv.jpg);
 	position: relative;
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .ThirdSection{
@@ -101,6 +110,7 @@ img{
 	background-image: url(../img/RockyMountains.jpg);
 	position: relative;
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .fixHeader{
