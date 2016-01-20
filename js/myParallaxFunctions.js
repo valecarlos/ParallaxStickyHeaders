@@ -26,7 +26,7 @@ $(window).scroll(function()
   	//Section 3 Controller
 	if(windowScroll > $('.ThirdSection').offset().top){
 
-		var opacity = (windowScroll - $('.ThirdSection').offset().top) / (windowScroll / 2);
+		var opacity = (windowScroll - $('.ThirdSection').offset().top) / (windowScroll / 4);
     		$('#ThirdCover').css({'opacity': opacity});
 	}
 
