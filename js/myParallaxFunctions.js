@@ -7,34 +7,30 @@ $(window).scroll(function()
 		'transform' : 'translate(0px,'+ windowScroll /2 +'px)'
 	});
 
-	$('.Flowers').css({
-		'transform' : 'translate(0px,-'+ windowScroll /16 +'%)'
+	$('.Lamp').css({
+		'transform' : 'translate(0px,-'+ windowScroll /12 +'%)'
 	});
-	//console.log('translateY('+ windowScroll /2 +'%)');
+
 
 	//Section 2 Controller
 	if(windowScroll > $('.SecondSection').offset().top){
 
 		var opacity = (windowScroll - $('.SecondSection').offset().top) / (windowScroll / 2);
-		//var moveTitleBy = (windowScroll - $('.SecondSection').offset().top)/6.3;
     	$('#SecondCover').css({'opacity': opacity});
-    	//$('#SecondTitle').css({'top': moveTitleBy + '%'});
  
 	}
-	$('.SecondSection').toggleClass('fixHeader', $(window).scrollTop() > $('#anchorDiv').offset().top+520);
-
+	$('.SecondSection').toggleClass('fixHeader', $(window).scrollTop() > $('#anchorDiv').offset().top+420);
+	$('#SecondTitle').toggleClass('Titles-Animation-Down', $(window).scrollTop() > $('#anchorDiv').offset().top);
+	$('#SecondTitle').toggleClass('Titles-Animation-Up', $(window).scrollTop() < $('#anchorDiv').offset().top);
+  	
   	//Section 3 Controller
 	if(windowScroll > $('.ThirdSection').offset().top){
 
 		var opacity = (windowScroll - $('.ThirdSection').offset().top) / (windowScroll / 2);
-		//var moveTitleBy = (windowScroll - $('.ThirdSection').offset().top)/6.3;
-
-    	if (opacity < 0.5){
     		$('#ThirdCover').css({'opacity': opacity});
-    		}
-    	//console.log(moveTitleBy)
-    	//$('#ThirdTitle').css({'top': moveTitleBy + '%'});
 	}
 
-  	$('.ThirdSection').toggleClass('fixHeader', $(window).scrollTop() > $('#anchorDivtwo').offset().top+520);
+  	$('.ThirdSection').toggleClass('fixHeader', $(window).scrollTop() > $('#anchorDivtwo').offset().top+420);
+  	$('#ThirdTitle').toggleClass('Titles-Animation-Down', $(window).scrollTop() > $('#anchorDivtwo').offset().top);
+	$('#ThirdTitle').toggleClass('Titles-Animation-Up', $(window).scrollTop() < $('#anchorDivtwo').offset().top);
 });

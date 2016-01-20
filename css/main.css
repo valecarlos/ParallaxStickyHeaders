@@ -28,7 +28,7 @@ img{
 	/*it has to be relative so it is an anchor for the content within,
 	which will be absolute*/
 	position: relative;
-	height: 600px;
+	height: 500px;
 	background-image: url(../img/TeaCup.jpg);
 	background-size: cover;
 	background-position: top center;
@@ -50,8 +50,8 @@ img{
 	margin-top: -100px; 
 }
 
-.Flowers{
-	height: 600px;
+.Lamp{
+	height: 500px;
 	width: 600px;
 	background-image: url(../img/Lamp1.png);
 	position: absolute;
@@ -63,12 +63,12 @@ img{
 }
 
 .anchorDivs{
-	height: 600px;
+	height: 500px;
 }
 .CoverDiv{
 	/*background-color: rgba(255,0,0,0.5);
 	background-color: purple;*/
-	opacity: 0;
+	opacity: 0.1;
 	top:0;
 	left: 0;
 	right: 0;
@@ -78,36 +78,52 @@ img{
 }
 
 .CoverDivPurple{
-	background-color: purple;
+	background-color: red;
 }
 
 .CoverDivYellow{
-	background-color: yellow;
+	background-color: purple;
 }
 .Titles{
 	color: white;
-	font-size: 4em;
+	font-size: 3em;
 	position: absolute;
 	width: 100%;
 	text-align: center;
-	bottom: 0px;
+	animation-duration: 1.2s;
+	animation-fill-mode: forwards;
 	/*bottom: 50%;
 	text-align: center;*/
 }
 
+.Titles-Animation-Down{
+	animation-name: goDown;
+}
+.Titles-Animation-Up{
+	animation-name: goUp;
+}
+
+@keyframes goDown {
+    0%   {top:0px; font-size: 5em; text-shadow: black 1px 1px}
+    100% {top:410px; font-size: 4em; text-shadow: black 2px 2px}
+}
+@keyframes goUp {
+    0% {top:410px; font-size: 4em; text-shadow: black 1px 1px}
+    100%   {top:0px; font-size: 5em; text-shadow: black 2px 2px}
+}
 .SecondSection{
-	height: 600px;
+	height: 500px;
 	width: 100%;
-	background-image: url(../img/tv.jpg);
+	background-image: url(../img/chemestry.jpg);
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .ThirdSection{
-	height: 600px;
+	height: 500px;
 	width: 100%;
-	background-image: url(../img/RockyMountains.jpg);
+	background-image: url(../img/music.jpg);
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -115,7 +131,7 @@ img{
 
 .fixHeader{
 	position : fixed;
-	top : -520px;
+	top : -420px;
 }
 .content{
 	height: 4000px;	
@@ -126,12 +142,12 @@ footer{
 	height: 200px;
 	right: 0px;
 	left:0px;
-	justify-content: center;
-	align-items: center;
 	position:absolute;
 }
 footer div{
+	width: 100%;
+	text-align: center;
 	position:relative;
 	color: white;
-	font-size: 5em;
+	font-size: 4vw;
 }
