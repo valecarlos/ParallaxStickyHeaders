@@ -35,6 +35,7 @@ img{
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	overflow: hidden;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
 .Logo{
@@ -59,7 +60,6 @@ img{
 	background-repeat: no-repeat;
 	top: 50%;
 	margin-left: -150px
-
 }
 
 .anchorDivs{
@@ -75,6 +75,7 @@ img{
 	bottom: 0;
 	position: absolute;
 	display: flex;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
 }
 
 .CoverDivPurple{
@@ -84,6 +85,7 @@ img{
 .CoverDivYellow{
 	background-color: purple;
 }
+
 .Titles{
 	color: white;
 	font-size: 3em;
@@ -128,7 +130,7 @@ img{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
+/*this 420px will be used in the JS file*/
 .fixHeader{
 	position : fixed;
 	top : -420px;
